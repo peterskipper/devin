@@ -1,2 +1,3 @@
 venv/*
 devin.egg-info/*
+devin/__pycache__/*
