@@ -4,6 +4,7 @@ setup(
     name='devin',
     version='0.1',
     url='https://github.com/peterskipper/devin',
+    download_url='https://github.com/peterskipper/devin/archive/0.1.tar.gz',
     license='MIT',
     author='Peter Skipper',
     author_email='peter.skipper@gmail.com',
