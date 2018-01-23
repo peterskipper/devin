@@ -1,6 +1,16 @@
 import click
 import random
 
+ALBUMS = [
+    "Savage Sinusoid by Igorrr",
+    "White Flag by Branches",
+    "Out of Love by Mister Heavenly",
+    "Talon of the Hawk by The Front Bottoms",
+    "King Con by Alex Winston",
+    "Wildlife Pop by Stepdad",
+    "The Far Field by Future Islands"
+]
+
 
 def _pick_intro():
     intros = ["Have you tried {}?",
@@ -8,12 +18,6 @@ def _pick_intro():
               "What about {}?",
               "You should play {}."]
     return random.choice(intros)
-
-
-def _load_albums():
-    with open('albums/albums.txt', 'r') as f:
-        albums = [album.strip() for album in f.readlines()]
-    return albums
 
 
 @click.command()
@@ -25,8 +29,7 @@ def _load_albums():
                    """)
 def main(more_devin=False):
     intro = _pick_intro()
-    albums = _load_albums()
-    album = random.choice(albums)
+    album = random.choice(ALBUMS)
     rec = intro.format(album)
     if more_devin:
         click.echo(rec, nl=False)
