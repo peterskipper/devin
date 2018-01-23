@@ -1,3 +1,8 @@
 venv/*
 devin.egg-info/*
 devin/__pycache__/*
+tests/__pycache__/*
+.tox/*
+.cache/*
+devin/*.pyc
+
