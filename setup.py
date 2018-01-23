@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='devin',
+    name='devinbot',
     version='0.1',
     url='https://github.com/peterskipper/devin',
     download_url='https://github.com/peterskipper/devin/archive/0.1.tar.gz',
