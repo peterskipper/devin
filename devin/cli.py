@@ -27,7 +27,7 @@ def _pick_intro():
                    So I put some devin in your devin, so you can devin while
                    you devin.
                    """)
-def main(more_devin=False):
+def devin_main(more_devin=False):
     intro = _pick_intro()
     album = random.choice(ALBUMS)
     rec = intro.format(album)

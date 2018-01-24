@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='devinbot',
-    version='0.2',
+    version='0.2.1',
     url='https://github.com/peterskipper/devin',
     license='MIT',
     author='Peter Skipper',
@@ -14,7 +14,7 @@ setup(
     install_requires=['click'],
     entry_points={
         'console_scripts': [
-            'devin = devin.cli:main'
+            'devin = devin.cli:devin_main'
         ]
     }
 )
