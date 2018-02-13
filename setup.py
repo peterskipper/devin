@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='devinbot',
-    version='0.2.1',
+    version='0.3',
     url='https://github.com/peterskipper/devin',
     license='MIT',
     author='Peter Skipper',
