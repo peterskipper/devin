@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='devinbot',
@@ -8,6 +8,7 @@ setup(
     author='Peter Skipper',
     author_email='peter.skipper@gmail.com',
     description='Command line tool to recommend albums',
+    packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
     platforms='any',
